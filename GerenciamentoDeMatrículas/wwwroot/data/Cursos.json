@@ -1,0 +1,26 @@
+[
+    {
+      "cd_curso": 001,
+      "nome_curso": "Desenvolvimento Web",
+      "carga_horaria": 120.00,
+      "dt_limite_matricula": "2023-06-30",
+      "preco_curso": 1200.00,
+      "lista_disciplinas": [ 001,002,003,004 ]
+    },
+  {
+    "cd_curso": 002",
+    "nome_curso": "Data Science",
+    "carga_horaria": 200.00,
+    "dt_limite_matricula": "2023-08-31",
+    "preco_curso": 2500.00,
+    "lista_disciplinas": [ 005, 006, 007, 008 ]
+  },
+  {
+    "cd_curso": 003,
+    "nome_curso": "Gestão de Projetos",
+    "carga_horaria": 80.00,
+    "dt_limite_matricula": "2023-09-30",
+    "preco_curso": 1800.00,
+    "lista_disciplinas": [ 009, 010, 011, 012 ]
+  }
+]

@@ -1,0 +1,25 @@
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
+
+namespace GerenciamentoDeMatrículas.Models
+{
+    public class Matricula
+    {
+        [JsonPropertyName("cd_matricula")]
+        public int cd_Matricula { get; set; }
+
+        [JsonPropertyName("dt_matricula")]
+        public DateOnly dt_Matricula { get; set; }
+
+        [JsonPropertyName("cd_aluno")]
+        public int cd_Aluno { get; set; }
+
+        [JsonPropertyName("lista_cursos")]
+        public List<int> lista_Cursos{ get; set; }
+
+        [JsonPropertyName("vl_total")]
+        public double vl_Total { get; set; }
+
+        public override string ToString() => JsonSerializer.Serialize<Matricula>(this);
+    }
+}

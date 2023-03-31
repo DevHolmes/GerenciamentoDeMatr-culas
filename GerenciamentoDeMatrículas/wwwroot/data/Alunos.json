@@ -1,0 +1,83 @@
+[
+  {
+    "cd_aluno": 1, 
+    "nome_aluno": "Ana Silva",
+    "cpf": "123.456.789-10",
+    "foto": "https://example.com/images/ana_silva.jpg",
+    "dt_nascimento": "1999-06-15",
+    "email": "ana.silva@example.com"
+  },
+  {
+    "cd_aluno": 2, 
+    "nome_aluno": "Jo�o Santos",
+    "cpf": "987.654.321-10",
+    "foto": "https://example.com/images/joao_santos.jpg",
+    "dt_nascimento": "1998-03-12",
+    "email": "joao.santos@example.com"
+  },
+  {
+    "cd_aluno": 3, 
+    "nome_aluno": "Maria Oliveira",
+    "cpf": "456.789.123-10",
+    "foto": "https://example.com/images/maria_oliveira.jpg",
+    "dt_nascimento": "2000-09-23",
+    "email": "maria.oliveira@example.com"
+  },
+  {
+    "cd_aluno": 4, 
+    "nome_aluno": "Pedro Alves",
+    "cpf": "321.654.987-10",
+    "foto": "https://example.com/images/pedro_alves.jpg",
+    "dt_nascimento": "1997-11-05",
+    "email": "pedro.alves@example.com"
+  },
+  {
+    "cd_aluno": 5, 
+    "nome_aluno": "Camila Silva",
+    "cpf": "789.123.456-10",
+    "foto": "https://example.com/images/camila_silva.jpg",
+    "dt_nascimento": "1999-02-18",
+    "email": "camila.silva@example.com"
+  },
+  {
+    "cd_aluno": 6, 
+    "nome_aluno": "Lucas Oliveira",
+    "cpf": "654.987.321-10",
+    "foto": "https://example.com/images/lucas_oliveira.jpg",
+    "dt_nascimento": "1998-08-10",
+    "email": "lucas.oliveira@example.com"
+  },
+  {
+    "cd_aluno": 7, 
+    "nome_aluno": "Isabela Santos",
+    "cpf": "234.567.890-10",
+    "foto": "https://example.com/images/isabela_santos.jpg",
+    "dt_nascimento": "2011-04-25",
+    "email": "isabela.santos@example.com"
+  },
+  {
+    "cd_aluno": 8, 
+    "nome_aluno": "Gabriel Alves",
+    "cpf": "890.123.456-10",
+    "foto": "https://example.com/images/gabriel_alves.jpg",
+    "dt_nascimento": "1996-12-02",
+    "email": "gabriel.alves@example.com"
+  },
+  {
+    "cd_aluno": 9, 
+    "nome_aluno": "Beatriz Oliveira",
+    "cpf": "456.123.789-10",
+    "foto": "https://example.com/images/beatriz_oliveira.jpg",
+    "dt_nascimento": "1999-07-14",
+    "email": "beatriz.oliveira@example.com"
+  },
+  {
+    "cd_aluno": 10, 
+    "nome_aluno": "Rafaela Silva",
+    "cpf": "789.456.123-10",
+    "foto": "https://example.com/images/rafaela_silva.jpg",
+    "dt_nascimento": "1997-10-28",
+    "email": "rafaela.silva@example.com"
+  }
+  ]
+

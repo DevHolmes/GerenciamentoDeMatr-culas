@@ -1,0 +1,74 @@
+[
+  {
+    "cd_disciplina" :  001,
+    "nome_disciplina": "HTML5",
+    "carga_horaria": 20.00,
+    "nome_professor": "Jo�o da Silva"
+  },
+  {
+    "cd_disciplina": 002,
+    "nome_disciplina": "CSS3",
+    "carga_horaria": 20.00,
+    "nome_professor": "Maria Oliveira"
+  },
+  {
+    "cd_disciplina": 003,
+    "nome_disciplina": "JavaScript",
+    "carga_horaria": 40.00,
+    "nome_professor": "Pedro Alves"
+  },
+  {
+    "cd_disciplina": 004,
+    "nome_disciplina": "ReactJS",
+    "carga_horaria": 40.00,
+    "nome_professor": "Camila Silva"
+  },
+  {
+    "cd_disciplina": 005,
+    "nome_disciplina": "Python",
+    "carga_horaria": 40.00,
+    "nome_professor": "Lucas Oliveira"
+  },
+  {
+    "cd_disciplina": 006,
+    "nome_disciplina": "Estatistica",
+    "carga_horaria": 40.00,
+    "nome_professor": "Isabela Santos"
+  },
+  {
+    "cd_disciplina": 007,
+    "nome_disciplina": "Machine Learning",
+    "carga_horaria": 60.00,
+    "nome_professor": "Gabriel Alves"
+  },
+  {
+    "cd_disciplina": 008,
+    "nome_disciplina": "Big Data",
+    "carga_horaria": 60.00,
+    "nome_professor": "Beatriz Oliveira"
+  },
+  {
+    "cd_disciplina": 009,
+    "nome_disciplina": "Scrum",
+    "carga_horaria": 20.00,
+    "nome_professor": "Rafaela Silva"
+  },
+  {
+    "cd_disciplina": 010,
+    "nome_disciplina": "Kanban",
+    "carga_horaria": 20.00,
+    "nome_professor": "Jo�o da Silva"
+  },
+  {
+    "cd_disciplina": 011,
+    "nome_disciplina": "Gerenciamento de Riscos",
+    "carga_horaria": 20.00,
+    "nome_professor": "Maria Oliveira"
+  },
+  {
+    "cd_disciplina": 012,
+    "nome_disciplina": "Lideran�a de Equipes",
+    "carga_horaria": 20.00,
+    "nome_professor": "Pedro Alves"
+  }
+]
