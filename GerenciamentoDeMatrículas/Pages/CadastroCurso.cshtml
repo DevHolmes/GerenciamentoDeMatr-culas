@@ -1,0 +1,30 @@
+﻿@page
+@model GerenciamentoDeMatrículas.Pages.CadastroCursoModel
+@{
+    ViewData["Title"] = "Cadastro de Curso";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cadastro de Curso</h1>
+    <form method="post">
+        <label asp-for="NovoCurso.nome_Curso">Curso:</label>
+        <input asp-for="NovoCurso.nome_Curso" type="text" autofocus><br><br>
+
+        <label asp-for="NovoCurso.carga_Horaria">Duração(horas):</label>
+        <input type="number" asp-for="NovoCurso.carga_Horaria"><br><br>
+
+        <label asp-for="NovoCurso.dt_LimiteMatricula">Prazo para matrícula:</label>
+        <input type="date" asp-for="NovoCurso.dt_LimiteMatricula"><br><br>
+
+        <label asp-for="NovoCurso.preco_Curso">Valor:</label>
+        <input type="number" asp-for="NovoCurso.preco_Curso"><br><br>
+        
+        <input type="button" id="addDisciplina" name="addDisciplina" value="Adicionar Disciplina"><br><br>
+
+        <input type="submit" value="Salvar"><br>
+        <label id="msg"></label>
+    </form>
+</div>
+
+
+

@@ -1,23 +1,20 @@
 [
   {
-    "cd_matricula": 001,
+    "cd_matricula": 1,
     "dt_matricula": "2023-01-01",
-    "cd_aluno": 001,
-    "lista_cursos": [ 001, 002 ],
-    "vl_total": 15000.00
+    "cd_aluno": 1,
+    "lista_cursos": [ 1, 2 ]
   },
   {
-    "cd_matricula": 002,
+    "cd_matricula": 2,
     "dt_matricula": "2023-02-15",
-    "cd_aluno": 002,
-    "lista_cursos": [ 002, 003 ],
-    "vl_total": 12000.00
+    "cd_aluno": 2,
+    "lista_cursos": [ 2, 3 ]
   },
   {
-    "cd_matricula": 003,
+    "cd_matricula": 3,
     "dt_matricula": "2023-03-20",
-    "cd_aluno": 003,
-    "lista_cursos": [ 001, 003 ],
-    "vl_total": 18000.00
+    "cd_aluno": 3,
+    "lista_cursos": [ 1, 3 ]
   }
 ]
