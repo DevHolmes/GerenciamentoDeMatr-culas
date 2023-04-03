@@ -10,10 +10,9 @@ namespace GerenciamentoDeMatrículas.Services
     {
         public string MontarEmail(Aluno aluno, List<Curso> listaCursos, List<Disciplina> listaDisciplinas)
         {
-            // valor total
             double valorTotal = 0;
 
-            // constrói o corpo do e-mail em HTML usando concatenação de strings
+            // Constrói o corpo do e-mail em HTML usando concatenação de strings
             string body = "<html><body>" +
                           $"<img src='{aluno.url_FotoAluno}' alt='FotoAluno' width='150'>" +
                           $"<p>Olá {aluno.nome_Aluno},</p>" +

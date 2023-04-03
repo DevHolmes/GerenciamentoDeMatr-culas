@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace GerenciamentoDeMatrículas.Models
@@ -8,12 +9,16 @@ namespace GerenciamentoDeMatrículas.Models
         [JsonPropertyName("cd_disciplina")]
         public int cd_Disciplina { get; set; }
 
+        [Required]
         [JsonPropertyName("nome_disciplina")]
         public string nome_Disciplina { get; set; }
 
+        [Required]
+        [Range(0, double.MaxValue, ErrorMessage = "Carga horária deve ser numérica")]
         [JsonPropertyName("carga_horaria")]
         public double carga_Horaria { get; set; }
 
+        [Required]
         [JsonPropertyName("nome_professor")] 
         public string nome_Professor { get; set; }
 
