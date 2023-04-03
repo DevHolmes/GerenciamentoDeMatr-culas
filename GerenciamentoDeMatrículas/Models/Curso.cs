@@ -15,7 +15,7 @@ namespace GerenciamentoDeMatrículas.Models
         public double carga_Horaria { get; set; }
 
         [JsonPropertyName("dt_limite_matricula")]
-        public string dt_LimiteMatricula { get; set; }
+        public DateTime dt_LimiteMatricula { get; set; }
 
         [JsonPropertyName("preco_curso")]
         public double preco_Curso { get; set; }

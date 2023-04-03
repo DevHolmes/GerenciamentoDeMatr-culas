@@ -17,6 +17,9 @@ namespace GerenciamentoDeMatrículas.Models
         [JsonPropertyName("nome_professor")] 
         public string nome_Professor { get; set; }
 
+        [JsonPropertyName("cd_Curso")]
+        public int cd_Curso { get; set; }
+
         public override string ToString() => JsonSerializer.Serialize<Disciplina>(this);
     }
 }

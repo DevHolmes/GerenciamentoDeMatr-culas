@@ -22,7 +22,7 @@ namespace GerenciamentoDeMatrículas.Models
 
 
         [JsonPropertyName("dt_nascimento")]
-        public DateOnly dt_NascimentoAluno { get; set; }
+        public DateTime dt_NascimentoAluno { get; set; }
 
 
         [JsonPropertyName("email")]
