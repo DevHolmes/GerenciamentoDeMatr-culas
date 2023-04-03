@@ -1,11 +1,12 @@
 ﻿using GerenciamentoDeMatrículas.Models;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace GerenciamentoDeMatrículas.Services
 {
-    public class JsonFileDisciplinaService
+    public class DisciplinaService
     {
-        public JsonFileDisciplinaService(IWebHostEnvironment webHostEnvironment)
+        public DisciplinaService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
@@ -27,6 +28,17 @@ namespace GerenciamentoDeMatrículas.Services
                         PropertyNameCaseInsensitive = true
                     });
             }
+        }
+
+        public void PostDisciplina(JsonObject jdisciplina)
+        {
+            if (jdisciplina == null) { throw new ArgumentNullException(); }
+
+            Disciplina disciplina = JsonSerializer.Deserialize<Disciplina>(jdisciplina);
+
+            new DatabaseContext().NovaDisciplina(disciplina);
+
+            return;
         }
     }
 }

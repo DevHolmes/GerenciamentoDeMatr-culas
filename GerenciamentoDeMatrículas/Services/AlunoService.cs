@@ -1,11 +1,12 @@
 ﻿using GerenciamentoDeMatrículas.Models;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace GerenciamentoDeMatrículas.Services
 {
-    public class JsonFileAlunoService
+    public class AlunoService
     {
-        public JsonFileAlunoService(IWebHostEnvironment webHostEnvironment)
+        public AlunoService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
@@ -28,6 +29,17 @@ namespace GerenciamentoDeMatrículas.Services
                         Converters = { new DateOnlyJsonConverter() }
                     });
             }
+        }
+
+        public void PostAluno(JsonObject jaluno)
+        {
+            if (jaluno == null) { throw new ArgumentNullException(); }
+
+            Aluno aluno = JsonSerializer.Deserialize<Aluno>(jaluno);
+
+            new DatabaseContext().NovoAluno(aluno);
+
+            return;
         }
     }
 }

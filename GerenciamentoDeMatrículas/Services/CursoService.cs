@@ -1,11 +1,14 @@
 ﻿using GerenciamentoDeMatrículas.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace GerenciamentoDeMatrículas.Services
 {
-    public class JsonFileCursoService
+    public class CursoService
     {
-        public JsonFileCursoService(IWebHostEnvironment webHostEnvironment)
+        public CursoService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
@@ -17,7 +20,7 @@ namespace GerenciamentoDeMatrículas.Services
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "Cursos.json"); }
         }
 
-        public IEnumerable<Curso> GetAlunos()
+        public IEnumerable<Curso> GetCursos()
         {
             using (var jsonFileReader = File.OpenText(JsonFileName))
             {
@@ -27,6 +30,17 @@ namespace GerenciamentoDeMatrículas.Services
                         PropertyNameCaseInsensitive = true
                     });
             }
+        }
+
+        public void PostCurso(JsonObject jcurso)
+        {
+            if (jcurso == null) { throw new ArgumentNullException(); }
+
+            Curso curso = JsonSerializer.Deserialize<Curso>(jcurso);
+
+            new DatabaseContext().NovoCurso(curso);
+
+            return;
         }
     }
 }
